@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+    <style>
+        ul{
+            list-style-type:none;
+            background:#f1f1f1;
+            padding: 0;
+            width:25%;
+            position:fixed;
+            top:0;
+            height:100%;
+        }
+        li a{
+            display:block;
+            color:black;
+            text-decoration: none;
+            padding:8px 16px;
+            border:1px solid grey;
+            box-shadow:0 0 2px grey;
+            margin:0px 0 -1px 0px ;
+
+        }
+        .link1 li a:hover,.dropdown a:hover{
+            background:black;
+            color:white;
+            border-left:5px solid grey;
+        }
+        .box{
+            margin-left:25%;
+            padding:20px;
+        }
+        .box-down{
+            display:none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .box-down a{
+            padding:10px;
+            color:black;
+            text-decoration: none;
+            display: block;
+        }
+        .box-down a:hover{
+            color:white;
+            background:black;
+        }
+        .dropdown:hover .box-down{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul class="link">
+        <div  class="link1">
+            <li><a href="https://www.baidu.com/" target="_blank">官网管理</a></li>
+            <li><a href="https://www.baidu.com/" target="_blank">新闻管理</a></li>
+            <li><a href="https://www.baidu.com/" target="_blank">系统管理</a></li>
+            <li><a href="https://www.baidu.com/" target="_blank">入口管理</a></li>
+            <li><a href="https://www.baidu.com/" target="_blank">活动管理</a></li>
+        </div>
+        <li class="dropdown">
+            <a href="https://www.baidu.com/" target="_blank" class="box-drop">内容管理</a>
+            <div class="box-down">
+                <a href="https://www.baidu.com/" target="_blank">下拉1</a>
+                <a href="https://www.baidu.com/" target="_blank">下拉2</a>
+                <a href="https://www.baidu.com/" target="_blank">下拉3</a>
+                <a href="https://www.baidu.com/" target="_blank">下拉4</a>
+                <a href="https://www.baidu.com/" target="_blank">下拉5</a>
+            </div>
+        </li>
+    </ul>
+    <div class="box">
+      <h1>全高的固定侧导航栏</h1>
+      <h2>请尝试滚动此区域，并查看 sidenav 如何粘在页面上。</h2>
+      <p>请注意，此 div 元素的左外边距为 25％。这是因为侧导航栏被设置为 25％ 宽。如果删除这个外边距，则 sidenav 将叠加到该 div 上。</p>
+      <p>还要注意，我们已为 sidenav 设置 overflow：auto。如果 sidenav 太长时（例如，如果其中有超过 50 个链接），会添加滚动条。</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p class="box11">Some text..112</p>
+      <p class="box13">Some text..113</p>
+      <button onclick="click()" class="box14">时间是？</button>
+      <button onclick="click1()" class="box15">时间是？</button>
+      <p id="demo">...</p>
+        <img src="/static/myApp/img/111.png" class="img" onclick="changeImg()">
+
+      <button class="box16">时间是？</button>
+
+      <button class="box17">时间是???？</button>
+
+        {% csrf_token %}
+
+        <br>
+
+        <table border="1" class="show1">
+            <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+            </thead>
+            <tbody class="show">
+
+            </tbody>
+        </table>
+        <br>
+        <input type="text" class="text1">年龄
+        <button class="button1">提交</button>
+
+
+
+<!--    </div>-->
+<!--    <ul class="items">-->
+<!--        <li class="item">item1</li>-->
+<!--        <li class="item">item2</li>-->
+<!--        <li class="item">item3</li>-->
+<!--    </ul>-->
+      <script src="/static/myApp/js/jquery2.js/"></script>
+      <script src="/static/myApp/js/jquery1.js/"></script>
+      <script src="/static/myApp/js/jquery3.js/"></script>
+      <script src="/static/myApp/js/jquery4.js/"></script>
+      <script src="/static/myApp/js/jquery5.js/"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+/*注释*/
+h1{
+    color:red;
+    text-align:center;
+}
+p{
+    color:black;
+}
+body{
+    background-image:url("/static/myApp/img/1.png");
+}
+span{
+    color:red;
+}
+ul{
+/*    list-style-image:url("/static/myApp/img/1.png");*/
+    list-style-type:circle;
+}
+table{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+th{
+    border:1px solid red;
+    padding:10px;
+}
+td{
+    border:1px solid blue;
+}
+caption{
+    padding:10px;
+}
+thead th{
+    background:black;
+    color:white;
+}
+tbody td{
+    background:green;
+    color:white;
+}
+.footer{
+    width:600px;
+    float:left;
+    padding:10px;
+    background-color:red;
+}
+aside{
+    line-height:30px;
+    background-color:red;
+    height:300px;
+    width:50px;
+    padding:15px;
+    float:30px;
+}
+/*
+假的类选择器，第一行内容
+*/
+p::first-line{
+    color:black;
+    background-color:red;
+}
+p::first-letter{
+    color:white;
+}
+::selection{
+    background-color:green;
+    color:red
+}
+/*链接未被访问*/
+a:link{
+    color:pink;
+}
+/*链接已被访问*/
+a:visited{
+    color:black;
+}
+/*鼠标悬停在连接上方*/
+a:hover{
+    color:green;
+}
+div{
+    background-color:green;
+    width:400px;
+    height:200px;
+}
+div:hover{
+    background-color:red;
+}
+input.name:focus{
+    background-color:cyan;
+}
+input.favour:focus{
+    background-color:pink;
+}
+:enabled{
+    outline: 2px solid green;
+}
+.favour{
+    background-color:grey;
+}
+/*
+相邻兄弟选择器
+*/
+:checked + span{
+    background-color:green;
+}
+:required{
+    outline:3px solid green;
+}
+/*
+:optional{
+    outline:3px solid red;
+}*/
+/*输入内容合法*/
+input:valid{
+    border:2px solid green;
+}
+/*输入内容不合法*/
+input:invalid{
+    border:5px solid black;
+}
+/*在数字范围内*/
+input:in-range{
+    background-color:grey;
+}
+/*在数字范围外*/
+input:out-of-range{
+    background-color:red;
+}
+/*设置输入框只读*/
+input:read-only{
+    background-color:pink;
+}
+/*设置输入框读写*/
+input.number:read-write{
+    background-color:blue;
+}
+/*
+设置子元素
+aside:first-child{
+    color:blue;
+}*/
+
+选择每个p元素是其父级的第5个p元素
+p:nth-of-type(5){
+    background-color:black;
+    color:white;
+}
+
+

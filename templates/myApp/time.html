@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<html>
+<body>
+
+<p>请点击按钮来显示日期。</p>
+
+
+<form name="myform" method="post" onsubmit="return displayDate()" action="demo_form.php">
+    <input type="text" name="name">姓名
+    <input type="submit" name="sex">性别
+</form>
+
+<script>
+function displayDate() {
+    const x = document.forms['myform']['name'].value;
+    if(x == ''){
+        alert('hhhh')
+    }
+    else if(x == '112'){
+        alert('n000o')
+    }
+}
+</script>
+
+
+</body>
+</html>

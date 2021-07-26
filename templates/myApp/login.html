@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+
+<!--    关闭自动填充-->
+    <form action="showmain/" method="post" autocomplete="off">
+        {% csrf_token %}
+<!--        分块-->
+        <fieldset>
+            <legend>描述</legend>
+            <input type="text" name="username"/>
+            <input type="password" name="password">
+    <!--        隐式关联-->
+            <label for="999">输入框：<input type="text" name="999" id="999"/></label>
+        </fieldset>
+        <input type="submit" name="登录" value="登录"/>
+        <hr/>
+        <fieldset>
+            <input type="date" name="baby"/>
+            <input type="time"/>
+            <input type="month"/>
+            <input type="text" name="sex" autocomplete="on" value="我是默认值" readonly>
+            <select name="sex22">
+                <option value="boy">男</option>
+                <option value="girl">女</option>
+            </select>
+            <button type="reset" >提交</button>
+        </fieldset>
+        <label><input type="radio" name="character" value="boy">男</label>
+        <label><input type="radio" name="character" value="girl">女</label>
+        <input type="checkbox" name="nature" value="good">好
+        <input type="checkbox" name="nature" value="bad">坏
+        <br><br>
+        <input type="color" name="color">
+<!--        图像按钮-->
+        <label><input type="image" name="image" src="/static/myApp/img/5.png/" alt="别动我"></label>
+
+        <input type="hidden" name="111" value="bad">悄悄
+        <br><br><br><br><br>
+        <label><input type="number" name="number" min="1" max="99">年龄</label>
+        <br><br>
+        <label><input type="email" name="email">邮箱</label>
+        <br><br>
+        <label><input type="tel" name="tel" pattern="^1\d{10}$" placeholder="仅限手机" required maxlength="11" list="tellist">telephone</label>
+        <br><br>
+        <label><input type="url" name="url">url</label>
+<!--        关联前面输入框下拉填写-->
+        <datalist id="tellist">
+            <option value="15555555555">155</option>
+            <option value="13333333333">133</option>
+            <option value="18888888888">188</option>
+        </datalist>
+        <textarea name="say" rows="9" cols="50" wrap="hard">局灰度化uhudhusahhhhhh</textarea>
+    </form>
+
+    <picture>
+        <source media="(min-width:1024px)" srcset="/static/myApp/img/2.png/">
+        <source media="(min-width:512px)" srcset="/static/myApp/img/1.png/">
+        <img src=/static/myApp/img/5.png/" alt="hhh" style="width:auto">
+    </picture>
+
+
+<!--    在网页中嵌入视频-->
+    <video src="/static/myApp/img/video_tag.mp4/" height="360px" width="640px" controls preload="auto" poster="/static/myApp/img/2.png/" loop>不能播放啦</video>
+    <br><br><br><br><br><br>
+<!--    <iframe src="https://map.baidu.com/@13418447,4302707,13z" width="900px" height="1500px">抱歉，加载不出来了</iframe>-->
+
+    <br>
+
+    <meter high="0.8" low="0.2" optimum="0.6" value="0.2" max="1"></meter>
+    <br>
+    <progress max="1" value="0.1"></progress>
+
+</body>
+</html>

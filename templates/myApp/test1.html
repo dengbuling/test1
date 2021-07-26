@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <style type="text/css">
+        div{
+            border:10px inset tomato;
+            padding:25px;
+            background-image:url("/static/myApp/img/1.png");
+            background-repeat:no-repeat;
+            background-position:10px 40px;
+            background-size:10%;
+            background-origin:padding-box;
+            background-clip:content-box;
+        }
+        p:nth-of-type(5){
+            color:red;
+            background-color:black
+        }
+        ::selection{
+            background-color:black;
+        }
+        p:hover{
+            color:green;
+        }
+        p:nth-of-type(7){
+            width:100px;
+            height:20px;
+            border-left:5px solid tomato;
+            background:grey;
+            font-size:15px;
+            padding:10px;
+            margin:auto;
+            overflow:auto;
+            resize:both;
+        }
+        span{
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p class="first">第1行数据</p>
+        <p class="first">第2行数据</p>
+        <p class="first">第3行数据</p>
+        <p class="first">第4行数据</p>
+        <p class="second">第5行数据</p>
+        <p>第6行数据</p>
+        <p>第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据第7行数据</p>
+        <p>第8行数据</p>
+        <div class="box2"></div>
+    </div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+</body>
+</html>

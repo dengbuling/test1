@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生</title>
+    <link rel="stylesheet" type="text/css" href="/static/myApp/css/style.css"/>
+</head>
+<body>
+    <h1>学生信息列表</h1>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    点击这里来显示日期和时间
+    </button>
+    <p id="demo"></p>
+
+    <script type="text/javascript" src="/static/myApp/js/sunck.js"></script>
+
+    <img src="/static/myApp/img/4.png">
+
+    <img src="{% static 'myApp/img/2.png' %}">
+
+
+    <a href="good/">反向解析</a>
+    <a href="{% url 'App:Appurl' 1 %}">反向解析</a>
+    {% if num1 %}
+        <h1>good--{{num1}}</h1>
+    {% else %}
+        <h1>什么都没有</h1>
+    {% endif %}
+
+<!--    方法里不能传参数，只有一个值的时候才能调用方法-->
+<!--    <h2>&#45;&#45;{{students.GetStudent}}&#45;&#45;</h2>-->
+    <ul>
+
+        {% for stu in students %}
+            {% if forloop.counter|divisibleby:2 %}
+                <li style="color:red">
+                    {{forloop.counter}}--{{stu.sname}}--{{stu.sgrade}}
+                </li>
+            {% else %}
+                <li style="color:blue">
+                    {{forloop.counter}}--{{stu.sname}}--{{stu.sgrade}}
+                </li>
+            {% endif %}
+            {% empty %}
+            <li>目前没有学生</li>
+        {% endfor %}
+    </ul>
+
+
+    <ul>
+        {% for index in students.paginator.page_range %}
+            {% if index == students.number %}
+                {{index}}
+            {% else %}
+                <li>
+                    <a href="/students/{{index}}/">{{index}}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+
+
+    {% ifequal 'hhh' 'hhh' %}
+        <h1>hahahah </h1>
+    {% endifequal %}
+    #显示内容大写
+    <h1>{{str|upper}}</h1>
+    #价格返回的数组拼接起来
+    <h1>{{students|join:'#'}}</h1>
+    <h1>{{text|default:"good"}}</h1>
+    <h1>num = {{num|add:10}}</h1>
+    <h1>num = {{num|add:-10}}</h1>
+<!--    num/1*5-->
+    <h1>num = {% widthratio num 1 5 %}</h1>
+    <!--    num/5*1-->
+    <h1>num = {% widthratio num 5 1 %}</h1>
+</body>
+</html>

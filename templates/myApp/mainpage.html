@@ -1,0 +1,16 @@
+{% extends 'myApp/base.html' %}
+
+{% block main %}
+    <h1>hhhhhh</h1>
+{% endblock main %}
+
+{% block main2 %}
+    <h1>{{code}}</h1>
+<!--    关闭自动转义-->
+    <h1>{{code|safe}}</h1>
+<!--    关闭自动转义-->
+    {% autoescape off %}
+    {{code}}
+    {% endautoescape %}
+{% endblock main2 %}
+

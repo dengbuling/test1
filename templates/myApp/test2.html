@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌套</title>
+    <style>
+        [class=box1]{
+            width:400px;
+            height:300px;
+            background:pink;
+        }
+        [class=box2]{
+            width:40px;
+            height:30px;
+            background:tomato;
+            margin-top:200px
+        }
+        .img1{
+            width:400px;
+            height:200px;
+            border:10px solid tomato;
+            padding:10px;
+            box-sizing:border-box;
+        }
+        .img2{
+            width:50%
+            min-width:300px;
+            max-width:500px;
+            border:5px solid green;
+            outline:5px solid tomato;
+        }
+        .box3{
+            width:400px;
+            height:200px;
+            box-shadow:0 0 8px 8px lightblue, 0 0 8px 8px pink inset,
+                       0 0 8px 20px blue;
+        }
+        p{
+            display:inline;
+        }
+        .link a{
+            display:inline-block;
+            width:50px;
+            height:30px;
+            background:lightblue;
+            border:3px outset black;
+            text-align:center;
+            line-height:30px;
+        }
+        .box5{
+            width:50%;
+            height:500px;
+            float:left;
+            background:blue;
+            box-shadow:0 0 8px 8px pink;
+        }
+        .box6{
+            width:50%;
+            height:500px;
+            float:right;
+            background:yellow;
+            box-shadow:0 0 8px 8px pink;
+            z-index:2;
+        }
+        .box7{
+            position:sticky;
+            top:110px;
+            text-align:center;
+        }
+        .box9{
+            right:20px;
+            bottom:20px;
+            position:fixed;
+            clear:both;
+            z-index:1;
+        }
+        .box11{
+            left:0;
+            top:0;
+            position:absolute;
+            z-index:1;
+        }
+        .box12{
+            left:0;
+            top:0;
+            position:absolute;
+        }
+        .box13{
+            left:0;
+            top:0;
+            position:absolute;
+            width:500px;
+            height:300px;
+            background:yellow;
+            z-index:2;
+            border:5px outset tomato;
+            padding:5px;
+            box-sizing:border-box;
+            box-shadow:0 0 8px 8px pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box7">
+        <a href="https://www.baidu.com/" class="box8">百度</a>
+    </div>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div>
+        <img src="/static/myApp/img/5.png/" alt="对不起" class="img1">
+        <br>
+        <img src="/static/myApp/img/3.png/" alt="对不起" class="img2">
+    </div>
+    <br>
+    <div class="box3"></div>
+    <br><br><br><br><br><br>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <br><br><br><br><br><br>
+    <div class="link">
+        <a href="https://www.baidu.com/" target="_blank">百度</a>
+        <a href="https://www.baidu.com/" target="_blank">百度</a>
+        <a href="https://www.baidu.com/" target="_blank">百度</a>
+        <a href="https://www.baidu.com/" target="_blank">百度</a>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <br><br><br>
+    <img src="/static/myApp/img/3.png/" class="box9">
+    <img src="/static/myApp/img/3.png/" class="box11">
+    <img src="/static/myApp/img/1.png/" class="box12">
+    <div class="box13"></div>
+</body>
+</html>

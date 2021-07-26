@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    调整屏幕自适应-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<!--width=device-width width为设置layout viewport 的宽度，”width-device”表示宽度是设备屏幕的宽度-->
+<!--initial-scale=1.0 initial-scale为设置页面的初始缩放值，、1.0就是占网页的100%-->
+<!--minimum-scale=1.0 表示最小的缩放比例-->
+<!--maximum-scale=1.0 表示最大的缩放比例-->
+<!--user-scalable=no 表示用户是否可以调整缩放比例，值为”no”或”-->
+<!--    5秒后自动跳转新url-->
+<!--    <meta http-equiv="refresh" content="5;https://www.baidu.com/">-->
+    <title>文本</title>
+<!--    设置外部文件打开css-->
+    <link rel="stylesheet" type="text/css" href="/static/myApp/css/style11.css/">
+    <!--    设置电脑屏幕适应宽度-->
+<!--    <link rel="stylesheet" type="text/css" media="screen and (min-width:512px) and (max-width:1024px)" href="/static/myApp/css/style11.css/">-->
+    <link rel="stylesheet" type="text/css" href="/static/myApp/css/style11.css/">
+
+<!--    设置网页图标-->
+    <link rel="icon" type="image/x-icon" href="/static/myApp/img/5.png/">
+    <script type="text/javascript" src="/static/myApp/js/sunck.js/"></script>
+
+</head>
+<body>
+    <h1>标题</h1>
+    <img alt="hahah" src="/static/myApp/img/4.png" width="250" height="250">
+<!--    target="_blank"在新窗口打开-->
+    <br>
+    <a href="https://www.baidu.com/" target="_blank">点击</a>
+    <p>呵呵呵呵呵呵呵呵呵呵或或或或或或&#160;&#160或或或&#160;&#160;或或或或或呵呵;或或或或或呵呵呵呵呵呵呵呵呵呵<span>hhhhh</span></p>
+    <pre>
+        <code>
+            h1{
+                color:blue;
+                text-decoration: underline;
+            }
+        </code>
+    </pre>
+
+    <p>h上面代码定义了一个变量<var>user_input</var>&#160;&#160;或或或或或呵呵呵呵呵呵呵呵呵呵<span>hhhhh</span></p>
+    <p>如果用户输入的是<kbd>香蕉</kbd>，那么程序将打印<samp>你最爱吃的是香蕉</samp>或或或或或呵呵呵呵呵呵呵呵呵呵<span>hhhhh</span></p>
+<!--    引用-->
+    <blockquote>
+        <p>呵呵呵呵呵呵呵呵呵呵或或或或或或&#160;&#160;或或或或或呵呵呵呵呵呵呵呵呵呵<span>hhhhh</span></p>
+    </blockquote>
+<!--    提示-->
+    <p>呵呵呵呵呵呵呵呵呵呵或或或或<abbr title="帮助">9</abbr>或或&#160;&#160;或或或或或呵呵呵呵呵呵呵呵呵呵<span>hhhhh</span></p>
+<!--    联系信息-->
+    <address>
+        联系电话：<strong>15555555555</strong>
+        地址：山东省青岛市
+    </address>
+<!--    字体变斜-->
+    <p>呵呵呵呵呵呵呵呵<em>哈哈</em>呵呵或</p>
+<!--    原文本删除变成新的-->
+    <p>呵呵呵呵呵呵呵呵<del>哈哈</del>呵呵<ins>jiushi</ins>或</p>
+    <p><small>呵呵呵呵呵呵呵呵或</small></p>
+<!--    无序列表-->
+
+<!--    有序列表orderlist-->
+    <ol type="A" reversed>
+        <li>7</li>
+            <ul>
+                <li>9</li>
+                <li>8</li>
+            </ul>
+        <li>6</li>
+    </ol>
+    <ul>
+        <li>9</li>
+        <li>8</li>
+    </ul>
+<!--    表格-->
+    <table>
+        <caption>复仇者联盟</caption>
+<!--        <colgroup>-->
+<!--            <col style="background:red">-->
+<!--            <col span="1" style="background:blue">-->
+<!--        </colgroup>-->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小甲鱼</td>
+                <td>混乱</td>
+            </tr>
+            <tr>
+                <td>小狗子</td>
+                <td>好的</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">路巨人</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="footer">哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈</div>
+    <aside>
+        <p>学习</p>
+        <p>jieshuo</p>
+    </aside>
+
+    <section>
+        <details>
+            <summary>什么？</summary>
+            <p>jieshao</p>
+            <p>jiejie</p>
+        </details>
+    </section>
+    <br>
+    <div>999999999999999999</div>
+    <form>
+        <label>姓名<input type="text" name="name" class="name" autocomplete="off"></label>
+
+        <br><br>
+        <label>输入爱好</label>
+        <input type="text" name="favour" class="favour" disabled>
+
+        <br>
+        <button>可用</button>
+        <button disabled>不可用</button>
+        <br><br>
+        <input type="radio" name="girl" class="girl"><span>女</span>
+        <input type="radio" name="girl" class="boy"><span>男</span>
+        <input type="checkbox" name="boy"><span>男</span>
+        <input type="checkbox" name="boy1"><span>男1111</span>
+        <input type="text" name="boy2" required><span>男11111</span>
+        <input type="text" name="boy3" readonly><span>男11111</span>
+        <label><input type="tel" name="telephone" pattern="^1[358]\d{9}" maxlength="11">电话</label>
+        <br><br><br>
+        <input type="number" min="9" max="99" value="66" name="number" class="number">输入数字
+    </form>
+</body>
+</html>
