@@ -73,7 +73,7 @@ except IsADirectoryError as m:
 import os
 print(os.name)
 print(os.path)
-print(os.path.abspath('.'))
+print(os.path.abspath('../static/myApp/css'))
 
 
 import json
