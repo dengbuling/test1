@@ -126,3 +126,23 @@
 # 54
 # 654
 # 787687687656345436456657455
+
+
+import time
+
+from datetime import datetime
+print(time.strftime("%Y-%m-%d %H:%M:%S"))
+
+print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+
+
+s="string"
+a = [i for i in s].sort()
+print(a)
+# for i in s:
+#     print(i)
+
+s="string"
+print(list(s))
+s="".join(sorted(list(s)))
+print(s)
